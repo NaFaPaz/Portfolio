@@ -8,35 +8,35 @@
     </head>
 
     <body>
-        <button type="button" class="menu-btn"><div class="hamb"></div></button>
+        <button type="button" class="menu-btn toggle"><div class="hamb"></div></button>
         <nav class="nav-bar">
                 <div class="logo-container">
-                    <a href="#home">
+                    <a class="toggle" href="#home">
                     <div class="logo"></div>
                     </a>  
                 </div>
                 
                 <ul class="nav-links">     
                     <li>            
-                        <a href="#about">
+                        <a class="toggle" href="#about">
                             <ion-icon name="information-circle-outline"></ion-icon>
                             <span class="nav-text">About</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#work">
+                        <a class="toggle" href="#work">
                             <ion-icon name="briefcase-outline"></ion-icon>
                             <span class="nav-text">Work</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#skills">
+                        <a class="toggle" href="#skills">
                             <ion-icon name="flask-outline"></ion-icon>
                             <span class="nav-text">Skills</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <a class="toggle" href="#contact">
                             <ion-icon name="mail-outline"></ion-icon>
                             <span class="nav-text">Contact</span>
                         </a>
@@ -44,8 +44,8 @@
                 </ul>
 
                 <div class="nav-contact">
-                <a class="linkedin-icon" href="linkedin"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a class="github-icon" href="github"><ion-icon name="logo-github"></ion-icon></a>
+                <a class="linkedin-icon" href="https://www.linkedin.com/in/nahuel-fanego-paz-4666b3222/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a class="github-icon" href="https://github.com/NaFaPaz" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                 </div>
         </nav>
             
@@ -61,7 +61,7 @@
                 <h2>About</h2>
                 <img class="avatar" src="./media/avatar_402666cf1d4f_128.png" alt="">
                 <p class="about-info">Nahuel Demian Fanego Paz is an Argentinian self-taught web developer with a passion for making the web look cool.</p>
-                <h3>Professional Interests</h3>
+                <h3><i>Professional Interests</i></h3>
                 <ul class="interests">
                     <li>Learning</li>
                     <li>Problem Solving</li>
@@ -70,7 +70,7 @@
                     <li>Technology</li>
                     <li>DevOps</li>
                 </ul>
-                <h3>Personal Interests</h3>
+                <h3><i>Personal Interests</i></h3>
                 <ul class="interests">
                     <li>Music</li>
                     <li>Movies</li>
@@ -81,16 +81,27 @@
                 </ul>
             </section>
             <section id="work">
-                
                 <h2>Work</h2>
             </section>
             <section id="skills">
                 <h2>Skills</h2>
+                <div class="card-container">
+                    <div class="icon-card"><img class="skill-icon" src="./media/html-1.svg" alt=""></div>
+                    <div class="icon-card"><img class="skill-icon" src="./media/css-3.svg" alt=""></div>
+                    <div class="icon-card"><img class="skill-icon" src="./media/javascript-1.svg" alt=""></div>
+                    <div class="icon-card"><img class="skill-icon" src="./media/git-icon.svg" alt=""></div>
+                    <div class="icon-card"><img class="skill-icon github" src="./media/github-icon-1.svg" alt=""></div>
+                    <div class="icon-card"><img class="skill-icon" src="./media/nodejs-icon.svg" alt=""></div>
+                    <div class="icon-card"><img class="skill-icon" src="./media/mongodb-icon-1.svg" alt=""></div>
+                    <div class="icon-card"><img class="skill-icon" src="./media/stack-overflow.svg" alt=""></div>
+                </div>
             </section>
         </main>
 
         <footer>
-            <section id="contact" class="main">Contact</section>
+            <section id="contact" class="main">
+                <h2>Contact</h2>        
+            </section>
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
