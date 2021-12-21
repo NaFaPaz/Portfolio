@@ -277,6 +277,53 @@ h3{
     background-color: var(--bg-darker);
 }
 
+.work-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 2em;
+    height: 65%;
+    width: 100%;
+    margin-top: 1vw;
+}
+
+.work-card{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: hsla(0 0% 35%/1);
+    width: 90%;
+    margin: 0 auto;
+    transition: 0.5s;
+    
+    box-shadow: 8px 10px 0px 3px var(--bg-dark);
+}
+
+.work-card:hover{
+    box-shadow: 5px 5px 10px 1px var(--bg-darker);
+    transform: scale(1.1,1.1);
+}
+
+.work-image{
+    width:100%;
+    height: 70%;
+    margin-bottom: .5em;
+}
+
+.work-skill{
+    
+    width: max-content;
+    background-color: var(--bg-cover);
+    border-radius: 3px;
+    padding: .01em .4em;
+    font-weight: bold;
+}
+
+.work-caption{
+    font-size: 1.25em;
+    padding: 1em 1.5em;
+}
+
+
 /* SKILLS */
 
 #skills{
@@ -293,11 +340,25 @@ h3{
 }
 
 .icon-card{
-    padding:clamp(1.25rem, 0.4rem + 3.8vw, 2.25rem);;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    color: hsla(0 0% 8%/1);
+    padding:clamp(1rem, -0.4rem + 6vw, 2rem);;
     border-radius: 0.35em;
     background-color: var(--bg-darker);
     box-shadow:2px 3px 7px 1px hsla(0 0% 0%/1),
         inset 3px 4px 6px 0px hsla(0 0% 35%/1);
+}
+
+.icon-card:hover {
+    background-color: var(--bg-dark);
+    color: hsla(0 0% 65%/1);
+    font-weight: bold;
+    box-shadow:inset -3px -4px 6px 0px hsla(0 0% 35%/1),
+    0px 0px 2px 1px hsla(0 0% 0%/1);
 }
 
 .card-container{
@@ -440,6 +501,10 @@ h3{
       li:hover ion-icon{
           color:lightgreen;
       }      
+
+      .work-card{
+          width: 30%;
+      }
 }
 
 /* MOBILE  */
@@ -523,5 +588,9 @@ h3{
     .main{
         margin:0;
         padding: 0;
+    }
+
+    .work-container{
+        flex-flow: column nowrap;
     }
 }
