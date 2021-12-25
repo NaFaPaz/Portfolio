@@ -275,6 +275,7 @@ h3{
 /* WORK */
 #work{
     background-color: var(--bg-darker);
+    justify-content: space-around;
 }
 
 .work-container{
@@ -282,8 +283,9 @@ h3{
     flex-wrap: wrap;
     align-items: stretch;
     gap: 2em;
+    padding: 1em 0;
     height: 65%;
-    width: 100%;
+    width: 90%;
     margin-top: 1vw;
 }
 
@@ -294,7 +296,6 @@ h3{
     width: 90%;
     margin: 0 auto;
     transition: 0.5s;
-    
     box-shadow: 8px 10px 0px 3px var(--bg-dark);
 }
 
@@ -306,20 +307,20 @@ h3{
 .work-image{
     width:100%;
     height: 70%;
-    margin-bottom: .5em;
+    margin-bottom:0.2em;
 }
 
 .work-skill{
-    
     width: max-content;
     background-color: var(--bg-cover);
     border-radius: 3px;
     padding: .01em .4em;
     font-weight: bold;
+    font-size: 0.8em;
 }
 
 .work-caption{
-    font-size: 1.25em;
+    font-size: 1em;
     padding: 1em 1.5em;
 }
 
@@ -374,21 +375,24 @@ h3{
 /* CONTACT */
 #contact{
     background-color: var(--bg-darker);
+    justify-content: space-between;
+}
+
+.contanct-caption{
+    font-size: clamp(1.2em, -0.6em + 6vw ,2.2em);
+    padding: 1em;
 }
 
 .form-container{
     display: flex;
-    width: 60%;
-    height: 100vh;
+    width: 70%;
     
 }
 
 .form-container form{
-    position: relative;
-    width: 90vw;
-    height: 100%;
-    padding: 1em ;
-    margin: 2.5em 0 1em 0;
+    padding: 2em 0;
+    width: 100%;
+    
     
 }
 
