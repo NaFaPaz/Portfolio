@@ -1,17 +1,19 @@
+<!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta Content-Type="text/html"; charset=utf-8>
         <title>- Portfolio | Nagual -</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal portfolio for web developer Nahuel Fanego Paz">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" rel="script" defer></script>
     </head>
 
     <body>
-        <button type="button" class="menu-btn toggle"><div class="hamb"></div></button>
+        <button type="button" class="menu-btn toggle" alt="Menu Button" title="Menu Button"><div class="hamb"></div></button>
         <nav class="nav-bar">
                 <div class="logo-container">
-                    <a class="toggle" href="#home">
+                    <a class="toggle" href="#home" title="Home">
                     <div class="logo"></div>
                     </a>  
                 </div>
@@ -44,8 +46,8 @@
                 </ul>
 
                 <div class="nav-contact">
-                <a class="linkedin-icon" href="https://www.linkedin.com/in/nahuel-fanego-paz-4666b3222/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a class="github-icon" href="https://github.com/NaFaPaz" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a rel="noreferrer" class="linkedin-icon" title="linkedin" href="https://www.linkedin.com/in/nahuel-fanego-paz-4666b3222/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a rel="noreferrer" class="github-icon" title="github" href="https://github.com/NaFaPaz" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                 </div>
         </nav>
             
@@ -117,14 +119,14 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="card-container">
-                    <div class="icon-card"><img class="skill-icon" src="./media/html-1.svg" alt=""><caption>HTML5</caption></div>
-                    <div class="icon-card"><img class="skill-icon" src="./media/css-3.svg" alt=""><caption>CSS3</caption></div>
-                    <div class="icon-card"><img class="skill-icon" src="./media/javascript-1.svg" alt=""><caption>JavaScript</caption></div>
-                    <div class="icon-card"><img class="skill-icon" src="./media/git-icon.svg" alt=""><caption>Git</caption></div>
-                    <div class="icon-card"><img class="skill-icon github" src="./media/github-icon-1.svg" alt=""><caption>Git-Hub</caption></div>
-                    <div class="icon-card"><img class="skill-icon" src="./media/nodejs-icon.svg" alt=""><caption>Node.Js</caption></div>
-                    <div class="icon-card"><img class="skill-icon" src="./media/mongodb-icon-1.svg" alt=""><caption>MongoDB</caption></div>
-                    <div class="icon-card"><img class="skill-icon" src="./media/stack-overflow.svg" alt=""><caption>Stack Overflow</caption></div>
+                    <div class="icon-card"><img alt="HTML5 logo" class="skill-icon" src="./media/html-1.svg" ><caption>HTML5</caption></div>
+                    <div class="icon-card"><img alt="CSS3 logo" class="skill-icon" src="./media/css-3.svg" ><caption>CSS3</caption></div>
+                    <div class="icon-card"><img alt="JavaScript logo" class="skill-icon" src="./media/javascript-1.svg" ><caption>JavaScript</caption></div>
+                    <div class="icon-card"><img alt="Git logo" class="skill-icon" src="./media/git-icon.svg" ><caption>Git</caption></div>
+                    <div class="icon-card"><img alt="Git-Hub logo" class="skill-icon github" src="./media/github-icon-1.svg" ><caption>Git-Hub</caption></div>
+                    <div class="icon-card"><img alt="Node.Js logo" class="skill-icon" src="./media/nodejs-icon.svg" ><caption>Node.Js</caption></div>
+                    <div class="icon-card"><img alt="MongoDB logo" class="skill-icon" src="./media/mongodb-icon-1.svg" ><caption>MongoDB</caption></div>
+                    <div class="icon-card"><img alt="Stack Overflow logo" class="skill-icon" src="./media/stack-overflow.svg" ><caption>Stack Overflow</caption></div>
                 </div>
             </section>
         </main>
@@ -135,20 +137,19 @@
                 <p class="contanct-caption">Let me build your idea! Message me:</p>
                 <div class="form-container"> 
                     <form action="https://formsubmit.co/4ffa179e657cdf1b423d56ffe68d6549" method="POST">
-                    
                     <div class="input-container">
-                        <input class="input" type="text" name="name" required>
-                        <span class="label" >Your Name</span>
+                        <input class="input" id="name" title="name" type="text" name="name" required>
+                        <label class="label" for="name">Your Name</label>
                         <div class="line"></div>
                     </div>
                     <div class="input-container">
-                        <input class="input" type="email" name="email" required>
-                        <span class="label">Your Email</span>
+                        <input class="input" id="email" type="email" name="email" title="email" required>
+                        <label class="label" for="email">Your Email</label>
                         <div class="line"></div>
                     </div>
                     <div class="input-container">
-                        <textarea class="input" name="message" required></textarea>
-                        <span class="label">Your Message</span>
+                        <textarea class="input" id="message" title="message" name="message" required></textarea>
+                        <label class="label" for="message">Your Message</label>
                         <div class="line"></div>
                     </div>
                     <input type="hidden" name="_next" value="https://NaFaPaz.github.io/Portfolio/thanks.html">
