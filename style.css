@@ -54,7 +54,7 @@ html {
 }
 
 .logo::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -10px;
   right: 30px;
@@ -65,7 +65,7 @@ html {
 }
 
 .logo::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 15px;
   left: 25px;
@@ -172,7 +172,7 @@ h1 {
 }
 
 .anim-text::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -183,7 +183,7 @@ h1 {
 }
 
 h1::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0.1em;
   top: 0;
@@ -252,7 +252,7 @@ section {
 /* ABOUT */
 
 .avatar {
-  max-width: min-content;
+  max-width: 20em;
   border-radius: 50%;
 }
 
@@ -312,7 +312,7 @@ h3 {
 }
 
 .work-card.soon::before {
-  content: "Coming Soon";
+  content: 'Coming Soon';
   position: absolute;
   top: 0;
   left: 0;
@@ -563,7 +563,7 @@ h3 {
   }
 
   .hamb::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -12px;
     right: 0;
@@ -573,7 +573,7 @@ h3 {
   }
 
   .hamb::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 12px;
     right: 0;
